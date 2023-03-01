@@ -9,6 +9,7 @@ Made by Kieran Roper.
 ## To-do
 
 - [x] Basic Functionality
+- [ ] Neaten & refine code
 - [ ] Web admin interface
   - [ ] Alter candidates
   - [ ] Make ready
@@ -34,7 +35,6 @@ Made by Kieran Roper.
 ![image Role settings](./docs-imgs/dynamic-role.png)
 ![image Voting reflects roles dynamically](./docs-imgs/role-dynamic.png)
 ![image Voting validation](./docs-imgs/voting-validation.png)
-![image ](./)
 ![image Voting complete](./docs-imgs/voting-complete.png)
 ![image Voting stored in database](./docs-imgs/voting-record.png)
 </details><br>
