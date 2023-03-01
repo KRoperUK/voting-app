@@ -23,8 +23,9 @@ Made by Kieran Roper.
 
 ### Functionality Demonstration
 
-![image Functionality demonstration](./docs-imgs/functionality.gif)
-![video](./docs-imgs/functionality.webm)
+![image Functionality demonstration](./docs-imgs/functionality-small.gif)
+
+https://i.imgur.com/I6Ogl3f.mp4
 
 <details> <summary> Functionality images </summary>
 
