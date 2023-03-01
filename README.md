@@ -1,47 +1,46 @@
-# Svelte + TS + Vite
+# Voting App
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+##  About
 
-## Recommended IDE Setup
+This is a side project using Svelte, Typescript, Vite, and Pocketbase to create a web-app capable of counting and storing votes.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+Made by Kieran Roper.
 
-## Need an official Svelte framework?
+## To-do
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+- [x] Basic Functionality
+- [ ] Web admin interface
+  - [ ] Alter candidates
+  - [ ] Make ready
+  - [ ] View votes
+  - [ ] Alter candidates
+- [ ] Anti-multiple vote verification
+  - [ ] Anonymous sign-in using Microsoft Exchange to prevent multiple votes from same person
+  - [ ] Authenticate member of University of Birmingham.
+- [ ] AGM Location, time, room, etc. information
 
-## Technical considerations
+## Functionality
 
-**Why use this over SvelteKit?**
+### Functionality Demonstration
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+![image Functionality demonstration](./docs-imgs/functionality.gif)
+![video](./docs-imgs/functionality.webm)
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+<details> <summary> Functionality images </summary>
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+![image Voting not ready](./docs-imgs/voting-not-ready.png)
+![image Settings](./docs-imgs/settings.png)
+![image Voting ready](./docs-imgs/voting-ready.png)
+![image Role settings](./docs-imgs/dynamic-role.png)
+![image Voting reflects roles dynamically](./docs-imgs/role-dynamic.png)
+![image Voting validation](./docs-imgs/voting-validation.png)
+![image ](./)
+![image Voting complete](./docs-imgs/voting-complete.png)
+![image Voting stored in database](./docs-imgs/voting-record.png)
+</details><br>
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+## Acknowledgements
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+- Pocketbase
+- Fireship, for inspiration for this project.
+  

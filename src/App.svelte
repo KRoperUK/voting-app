@@ -14,6 +14,7 @@
   let confirmVote = false;
 
   let title = "";
+  let society = "";
   let ready = "";
 
   onMount(async () => {
@@ -38,12 +39,15 @@
           ready = record.value;
         } else if (record.field === 'title') {
           title = record.value;
+        } else if (record.field === 'society') {
+          society = record.value;
         }
       }
   });
 
     title = settings.find(setting => setting.field === 'title').value;
     ready = settings.find(setting => setting.field === 'ready').value;
+    society = settings.find(setting => setting.field === 'society').value;
   });
 
   async function vote(roleInput, candidateInput) {
@@ -158,7 +162,7 @@
         </Col> -->
       </Row>
       <Row class="d-grid gap-2 col-12 mx-auto">
-        Wayfarers Hiking Society
+        {society}
       </Row>
       <Button size="sm" style="margin-top:0.5em;" >Admin</Button>
   </CardFooter>
