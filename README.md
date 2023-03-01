@@ -23,9 +23,8 @@ Made by Kieran Roper.
 
 ### Functionality Demonstration
 
-![image Functionality demonstration](./docs-imgs/functionality-small.gif)
-
-https://i.imgur.com/I6Ogl3f.mp4
+![image Functionality demonstration](./docs-imgs/functionality.gif)
+![video](./docs-imgs/functionality.webm)
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/I6Ogl3f" data-context="false" ><a href="//imgur.com/a/I6Ogl3f"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
